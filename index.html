@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link type="text/css" rel="stylesheet"
 	  href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <style type="text/css">
+      /* Large desktop */
+      @media (min-width: 980px) {
+        body {
+          padding-top: 60px;
+        }
+      }
+      /* Main body and headings */
+      body {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
     </style>  
   </head>
   <body>
@@ -32,6 +56,26 @@
 	  </div>  
 	</div>  
     </div>	  
+    <!-- We user row-fluid inside containers to achieve a resizeable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322-->
+    <div class="container">
+
+      <!-- Font and paired-font of .heading and .subheading adn body from Google fonts-->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+	<div class="span12">
+	  <h1>Product</h1>
+	</div>  
+      </div>	
+      <div class="row-fluid subheading">
+	<div class="span12">
+	  <!-- special typography from Bootstrap for lead paragraph -->
+	  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+	  <p class="lead">One sentence description.</p>
+	</div>  
+      </div>	
+
     <div class="container">
       <div class="row navigation">
 	<div class="span2 logo">
